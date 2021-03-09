@@ -65,7 +65,10 @@ $placeholderColor: #d6d6d6;
       color: $placeholderColor;
     }
 
-    button {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #0187db;
       border: none;
       color: white;
@@ -142,7 +145,7 @@ $placeholderColor: #d6d6d6;
         color: $placeholderColor;
       }
 
-      button {
+      a {
         background-color: #0187db;
         border: none;
         color: white;
