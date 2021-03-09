@@ -1,0 +1,28 @@
+.nav-container {
+  width: 100%;
+}
+
+.ul-container {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.li-container {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 30px;
+
+  a {
+    color: #ffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 12px;
+
+    &:hover {
+      border-bottom: 2px solid #ffff;
+      transition: border-bottom 2s;
+    }
+  }
+}

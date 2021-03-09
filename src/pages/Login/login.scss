@@ -1,15 +1,6 @@
 $formBorder: 50px;
 $placeholderColor: #d6d6d6;
 
-/*
-    |￣￣￣￣￣  
-    | // TODO: Fix bugs
-    |＿＿＿_ 
-(\__/)|| 
-(•ㅅ•)|| 
-/ 　 づ
-*/
-
 .section__signIn {
   display: flex;
   flex-direction: column;
@@ -51,7 +42,7 @@ $placeholderColor: #d6d6d6;
     background-color: white;
     border-top-left-radius: $formBorder;
     border-top-right-radius: $formBorder;
-    height: 70vh;
+    min-height: 70%;
     width: 100vw;
 
     label {

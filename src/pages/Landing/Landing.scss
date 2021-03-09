@@ -1,4 +1,4 @@
-@import "../../assets/GlobalStyles.scss";
+@import '../../assets/styles/index.scss';
 
 * {
   font-family: $RobotoFont;
@@ -12,13 +12,6 @@
   background: -webkit-linear-gradient(to right, $Orange-2, $Orange-1);
   background: linear-gradient(to right, $Orange-2, $Orange-1);
   position: absolute;
-  z-index: 100;
-}
-
-.bg-purple {
-  background: ($Purple-1-rgba);
-  padding: 5px;
-  border-radius: 100px;
 }
 
 .clip-path-2 {
@@ -29,84 +22,22 @@
   background: -webkit-linear-gradient(to left, $Purple-1, $Purple-2, $Purple-3);
   background: linear-gradient(to left, $Purple-1, $Purple-2, $Purple-3);
   position: absolute;
-  z-index: 100;
-  left: 500;
 }
 
-.cards-container {
-  width: 100%;
-  display: flex;
-  z-index: 200;
-  align-items: center;
-  justify-content: space-aroud;
-  position: relative;
-  top: -40px;
-  background-color: #7cb7dfc4;
-  padding: 10px;
-  border-radius: 10px;
-  font-family: $RobotoFont;
-}
-
-.margen {
-  margin-left: 100px;
-}
-
-.chart,
-img {
-  position: absolute;
-  z-index: 100;
-  top: 100px;
-  left: 350px;
-}
-
-.text-muted {
-  color: $TextMuted;
-  font-size: 17px;
-}
-
-.landing-container {
-  background-color: $White;
+.div__landing-container {
   display: flex;
   flex-direction: column;
-  height: 120vh;
-  width: 100%;
-}
-
-.header-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 200;
-}
-
-.ul-container {
-  display: flex;
-}
-
-.li-container {
-  list-style: none;
-  margin-left: 10px;
-  margin-right: 20px;
-  margin-top: 30px;
-
-  a {
-    color: $White;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    font-size: 12px;
-    &:hover {
-      border-bottom: 2px solid $White;
-      transition: all 2s;
-    }
-  }
-}
-
-.about {
+  background-color: $White;
   height: 100vh;
+  width: 100vw;
+}
+
+.section__about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 200;
+  height: 100vh;
+  width: 100%;
 
   input {
     display: block;
@@ -120,35 +51,25 @@ img {
 }
 
 i {
-  position: relative;
   background: $Orange-2;
-  background: -webkit-linear-gradient(
-    to left,
-    $Orange-2,
-    $Orange-1
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    $Orange-2,
-    $Orange-1
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, $Orange-2, $Orange-1);
+  background: linear-gradient(to left, $Orange-2, $Orange-1);
   color: $White;
   border-radius: 50%;
   padding: 10px;
-  top: -45px;
-  right: -320px;
 }
 
-.about-titles {
-  width: 45%;
+img {
+  width: 20%;
 }
 
-.about-title {
-  color: $TextMuted;
-  font-size: 12px;
-}
-
-.about-subtitle {
-  color: $Black;
-  font-size: 34px;
+.section__cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #7cb7dfc4;
+  font-family: $RobotoFont;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
 }
