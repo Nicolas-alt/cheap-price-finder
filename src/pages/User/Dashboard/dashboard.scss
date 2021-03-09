@@ -1,4 +1,19 @@
 .section__dashboard {
+    display: flex;
     background-color: #fafafa;
     height: 100%;
+
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        width: 10vw;
+    }
+
+    div {
+        background-color: rosybrown;
+        height: 100%;
+        width: 100%;
+    }
 }
