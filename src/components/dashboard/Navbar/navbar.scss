@@ -1,0 +1,96 @@
+.nav__dashboard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  border-top-left-radius: 40px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0.5em 3em;
+  height: 3em;
+
+  img {
+    clip-path: circle(50% at 50% 50%);
+    width: 2em;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 2em;
+    color: #4169e1;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  .i__dashBoardMenu {
+    color: #4169e1;
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .i__dashBoardMenu-active {
+    color: #4169e1;
+    font-size: 1.5em;
+    margin-left: 10px;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .ul-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 4.5em;
+    list-style: none;
+    background-color: #fafafa;
+    box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    height: 6em;
+
+    li {
+      margin: 5px 0;
+
+      a {
+        color: #4169e1;
+      }
+    }
+  }
+
+  ul::before {
+    position: relative;
+    bottom: 0.5em;
+    left: 2em;
+    display: block;
+    content: '';
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #fafafa;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav__dashboard {
+    border-top-left-radius: 0;
+    padding: 0.5em 2em;
+    height: 3em;
+
+    .ul-active {
+      top: 4.5em;
+    }
+  }
+}

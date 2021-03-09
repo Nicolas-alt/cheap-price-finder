@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Navbar from '../../../components/dashboard/Navbar/Navbar';
 import './dashboard.scss';
 
 const Dashboard = ({ children }) => {
@@ -27,7 +28,10 @@ const Dashboard = ({ children }) => {
           <span>Search</span>
         </NavLink>
       </aside>
-      <div>{children}</div>
+      <div className="div__child">
+        <Navbar />
+        {children}
+      </div>
     </section>
   );
 };
