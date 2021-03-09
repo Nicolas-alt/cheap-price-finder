@@ -8,16 +8,24 @@ const Nav = () => {
       <nav className="nav-container">
         <ul className="ul-container">
           <li className="li-item">
-            <Link to="/">Home</Link>
+            <Link className="a-link" to="/">
+              Home
+            </Link>
           </li>
           <li className="li-item">
-            <Link to="/">Home</Link>
+            <Link className="a-link" to="/">
+              About
+            </Link>
           </li>
-          <li className="li-container">
-            <Link to="/">Home</Link>
+          <li className="li-item">
+            <Link className="a-link" to="/auth/register">
+              Sign Up
+            </Link>
           </li>
-          <li className="li-container">
-            <Link to="/">Home</Link>
+          <li className="li-item">
+            <Link className="a-link" to="/auth/login">
+              Sign In
+            </Link>
           </li>
         </ul>
       </nav>
