@@ -1,31 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './dashboard.scss';
 
 const Dashboard = ({ children }) => {
   return (
     <section className="section__dashboard">
       <aside>
-        <Link to="/user/home">
+        <NavLink to="/user/home" activeClassName="a-active">
           <i className="bx bx-home-heart"></i>
-          Home
-        </Link>
-        <Link to="/user/profile">
+          <span>Home</span>
+        </NavLink>
+        <NavLink to="/user/profile" activeClassName="a-active">
           <i className="bx bx-user"></i>
-          Profile
-        </Link>
-        <Link to="/user/chart">
+          <span>Profile</span>
+        </NavLink>
+        <NavLink to="/user/chart" activeClassName="a-active">
           <i className="bx bx-line-chart"></i>
-          Chart
-        </Link>
-        <Link to="/user/about">
+          <span>Chart</span>
+        </NavLink>
+        <NavLink to="/user/about" activeClassName="a-active">
           <i className="bx bx-info-square"></i>
-          About
-        </Link>
-        <Link to="/user/search">
+          <span>About</span>
+        </NavLink>
+        <NavLink to="/user/search" activeClassName="a-active">
           <i className="bx bx-search-alt-2"></i>
-          Search
-        </Link>
+          <span>Search</span>
+        </NavLink>
       </aside>
       <div>{children}</div>
     </section>
