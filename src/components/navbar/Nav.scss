@@ -1,6 +1,8 @@
 @import '../../assets/styles/_var.scss';
 
 .ul-container {
+  position: relative;
+  z-index: 20;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -15,7 +17,7 @@
   margin: 0 15px;
 
   a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     font-size: 1em;

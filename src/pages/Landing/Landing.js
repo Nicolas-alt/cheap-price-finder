@@ -7,11 +7,11 @@ const Landing = () => {
   return (
     <section className="section__container">
       <Nav />
-      <div className="">
+      <div className="div__principal">
         <div>
-          <h3 className="">Innovate solution for sourcing candidates</h3>
-          <h2 className="">
-            Help us find the missing puzzle, get reward properly
+          <h3>Innovative solution for compare prices.</h3>
+          <h2>
+            We help you to find the best prices <span>ever</span>!
           </h2>
           <form>
             <input placeholder="Search..." type="search" />
@@ -20,7 +20,7 @@ const Landing = () => {
             </button>
           </form>
         </div>
-        <Chart />
+        <Chart className="sgv__principal" />
       </div>
     </section>
   );
