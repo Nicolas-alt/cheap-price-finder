@@ -1,0 +1,74 @@
+@import "../../../assets/styles/var";
+
+$Card-Header-Bg: #2c3a47;
+$Description-Colour: #e66767;
+
+.profile-card {
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.card-header {
+  background: $Card-Header-Bg;
+  padding: 5px 5px;
+}
+
+.card-image {
+  display: inline-block;
+  padding: 5px;
+  background: linear-gradient(130deg, #74b9ff, $Description-Colour);
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 50%;
+  animation: animated-gradient 2s linear infinite;
+
+  img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.name {
+  color: $White;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.profession {
+  font-size: 15px;
+  color: $Description-Colour;
+}
+
+.social-media {
+  a {
+    color: $White;
+    width: 30px;
+    font-size: 16px;
+    transition: 0.3s linear;
+
+    &:hover {
+      color: $Description-Colour;
+    }
+  }
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}

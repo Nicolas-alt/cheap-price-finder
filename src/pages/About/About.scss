@@ -1,0 +1,71 @@
+@import "../../assets/styles/var";
+
+hr{
+  width: 50%;
+}
+
+.about___container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about___title {
+  color: royalblue;
+  text-shadow: 0.1em 0.1em 0.2em $Black;
+  margin: 0;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.about___paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph {
+  width: 55%;
+  text-align: justify;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+.paragraph__icons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  i {
+    font-size: 4em;
+    margin: 0.2em;
+    transition: 1.5s all;
+
+    &:hover {
+      transform: scale(0.8);
+      transition: 1.5s all;
+    }
+  }
+
+  .github:hover {
+    color: #4078c0;
+  }
+
+  .twitter:hover {
+    color: #1da1f2;
+  }
+}
+
+/******************** CARD CONTAINER *******************/
+.cards___container{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
