@@ -1,34 +1,30 @@
 @import "../../../assets/styles/var";
 
-$Card-Header-Bg: #2c3a47;
-$Description-Colour: #e66767;
-
 .profile-card {
-  width: 200px;
+  width: 35%;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 30px;
+  background-size: cover;
 }
 
 .card-header {
-  background: $Card-Header-Bg;
+  background: linear-gradient(130deg, $Purple-3, $Blue);
   padding: 5px 5px;
 }
 
 .card-image {
   display: inline-block;
   padding: 5px;
-  background: linear-gradient(130deg, #74b9ff, $Description-Colour);
+  background: $White;
   margin: auto;
   margin-top: 5px;
   border-radius: 50%;
-  animation: animated-gradient 2s linear infinite;
 
   img {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
 }
@@ -42,33 +38,24 @@ $Description-Colour: #e66767;
 
 .profession {
   font-size: 15px;
-  color: $Description-Colour;
+  color: $White;
+  padding: 10px;
+  font-weight: 600;
 }
 
 .social-media {
+  padding: 10px;
+  border: 0.5px solid $White;
+  border-radius: 10px;
   a {
     color: $White;
-    width: 30px;
-    font-size: 16px;
+    width: 90px;
+    font-size: 20px;
     transition: 0.3s linear;
+    font-weight: 600;
 
     &:hover {
-      color: $Description-Colour;
+      color: $Purple-1;
     }
-  }
-}
-
-@keyframes animated-gradient {
-  25% {
-    background-position: left bottom;
-  }
-  50% {
-    background-position: right bottom;
-  }
-  75% {
-    background-position: right top;
-  }
-  100% {
-    background-position: left top;
   }
 }
