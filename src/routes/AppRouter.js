@@ -9,6 +9,7 @@ import {
 import AuthRoutes from './AuthRoutes';
 import Landing from '../pages/Landing/Landing';
 import PrivateRoutes from './PrivateRoutes'
+import About from '../pages/About/About';
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/auth" component={AuthRoutes} />
         <Route path="/user" component={PrivateRoutes} />
         <Route exact path="/" component={Landing} />
+        <Route exact path="/About" component={About} />
         <Redirect to="/" />
       </Switch>
     </Router>
