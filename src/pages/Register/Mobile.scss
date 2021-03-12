@@ -17,13 +17,13 @@
 
       a {
         width: 60%;
-        padding: 15px;
+        padding: 0em;
       }
     }
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .register___container {
     display: flex;
     flex-direction: column;
@@ -32,21 +32,27 @@
     width: 100%;
 
     .text-container {
-      width: 92%;
-      height: 40%;
+      width: 100%;
+      height: 50%;
     }
 
     form {
-      height: 58%;
-      width: 87%;
+      height: 160%;
+      width: 100%;
+      padding: 0em;
 
       a {
         width: 60%;
-        padding: 15px;
+        padding: 0em;
       }
 
       input {
-        width: 80%;
+        width: 85%;
+      }
+
+      label{
+        margin-bottom: 0.4em;
+        margin-top: 15px;
       }
     }
   }
