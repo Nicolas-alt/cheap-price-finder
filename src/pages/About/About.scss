@@ -9,8 +9,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rosybrown;
-  padding-top: 0.5em;
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
@@ -58,15 +57,12 @@ hr {
 
 .cards___container {
   display: flex;
+  padding-top: 2.5em;
   justify-content: space-evenly;
   width: 100%;
 }
 
 @media screen and (max-width: 680px) {
-  .about___container {
-    height: auto;
-  }
-
   .cards___container {
     display: flex;
     align-items: center;
