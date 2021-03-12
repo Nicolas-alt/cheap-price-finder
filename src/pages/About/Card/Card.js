@@ -1,7 +1,15 @@
-import React from "react";
-import "./Card.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Card.scss';
 
-const Card = ({ name, skill }) => {
+const Card = ({
+  name,
+  skill,
+  facebook = undefined,
+  twitter = undefined,
+  github = undefined,
+  youtube = undefined,
+}) => {
   return (
     <div className="profile-card">
       <div className="card-header">
@@ -10,15 +18,42 @@ const Card = ({ name, skill }) => {
         </div>
         <div className="name">{name}</div>
         <div className="profession">{skill}</div>
-        <div className="social-media">
-          <a href="#" className="fab fa-facebook-f"></a>
-          <a href="#" className="fab fa-twitter"></a>
-          <a href="#" className="fab fa-github"></a>
-          <a href="#" className="fab fa-youtube"></a>
-        </div>
+        {name && (
+          <div className="social-media">
+            {facebook && (
+              <a href={facebook}>
+                <i className="fab fa-facebook-f"></i>{' '}
+              </a>
+            )}
+            {twitter && (
+              <a href={twitter}>
+                <i className="fab fa-twitter"></i>{' '}
+              </a>
+            )}
+            {github && (
+              <a href={github}>
+                <i className="fab fa-github"></i>
+              </a>
+            )}
+            {youtube && (
+              <a href={youtube}>
+                <i className="fab fa-youtube"></i>
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  skill: PropTypes.string.isRequired,
+  facebook: PropTypes.string,
+  twitter: PropTypes.string,
+  github: PropTypes.string,
+  youtube: PropTypes.string,
 };
 
 export default Card;
