@@ -1,0 +1,53 @@
+@media screen and (max-width: 500px) {
+  .register___container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    .text-container {
+      width: 92%;
+      height: 40%;
+    }
+
+    form {
+      height: 58%;
+      width: 87%;
+
+      a {
+        width: 60%;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .register___container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    .text-container {
+      width: 92%;
+      height: 40%;
+    }
+
+    form {
+      height: 58%;
+      width: 87%;
+
+      a {
+        width: 60%;
+        padding: 15px;
+      }
+
+      input {
+        width: 80%;
+      }
+    }
+  }
+}

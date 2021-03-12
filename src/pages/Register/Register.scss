@@ -1,0 +1,75 @@
+$formBorder: 50px;
+$placeholderColor: rgb(41, 43, 44);
+
+.register___container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../assets/img/Login_bg.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  .text-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .text-container p,
+  h3 {
+    margin: 2em;
+    text-align: center;
+  }
+
+  .text-container h3 {
+    font-size: 2.5em;
+    color: #4c37ba;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 45vw;
+    padding: 2em;
+
+    label {
+      color: $placeholderColor;
+      text-align: left;
+      font-weight: 700;
+      width: 90%;
+    }
+
+    input {
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid #d6d6d6;
+      margin-bottom: 3em;
+      height: 3em;
+      outline: none;
+      width: 90%;
+    }
+
+    ::placeholder {
+      color: $placeholderColor;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0187db;
+      border: none;
+      color: white;
+      border-radius: 1.2em;
+      height: 3em;
+      width: 50%;
+    }
+  }
+}
+

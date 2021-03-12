@@ -1,5 +1,5 @@
 $formBorder: 50px;
-$placeholderColor: #d6d6d6;
+$placeholderColor: rgb(41, 43, 44);;
 
 .section__signIn {
   display: flex;
@@ -58,6 +58,7 @@ $placeholderColor: #d6d6d6;
       border-bottom: 2px solid #d6d6d6;
       margin-bottom: 3em;
       height: 3em;
+      outline: none;
       width: 90%;
     }
 
@@ -81,19 +82,10 @@ $placeholderColor: #d6d6d6;
 
 @media screen and (min-width: 1000px) {
   .section__signIn {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #0187db;
-    height: 100%;
-    width: 100%;
 
     div {
-      display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding-left: 2em;
       width: 50%;
       height: 100%;
     }
@@ -104,14 +96,11 @@ $placeholderColor: #d6d6d6;
     }
 
     div p {
-      color: $placeholderColor;
       font-size: 1.5em;
-      width: 100%;
     }
 
     div h3 {
       font-size: 3em;
-      color: white;
     }
 
     form {
@@ -119,30 +108,13 @@ $placeholderColor: #d6d6d6;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: white;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
       height: 100%;
       width: 50%;
 
       label {
-        color: $placeholderColor;
         text-align: left;
         font-weight: 700;
         width: 90%;
-      }
-
-      input {
-        border: none;
-        background-color: transparent;
-        border-bottom: 2px solid #d6d6d6;
-        margin-bottom: 3em;
-        height: 3em;
-        width: 90%;
-      }
-
-      ::placeholder {
-        color: $placeholderColor;
       }
 
       a {
