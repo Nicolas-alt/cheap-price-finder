@@ -1,10 +1,10 @@
-import React from "react";
-import "./About.scss";
-import Card from "./Card/Card";
-
+import React from 'react';
+import Card from './Card/Card';
+import './About.scss';
+// className="animate__animated animate__fadeInRight"
 const About = () => {
   return (
-    <section className="about___container">
+    <section className="about___container ">
       <h2 className="about___title">About Project</h2>
       <div className="about___paragraph">
         <p className="paragraph">

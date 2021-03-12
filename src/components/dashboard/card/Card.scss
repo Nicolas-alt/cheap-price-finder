@@ -1,55 +1,5 @@
-@import "../../assets/styles/index.scss";
+@import '../../../assets/styles/var';
 
-.card-contain {
-  width: 100%;
-  height: auto;
-  margin: 50px;
-}
-
-.card {
-  width: auto;
-  height: auto;
-  background-color: $White;
-  border-radius: 10px;
-
-  .avatar-image{
-    padding: 10px;
-    width: 70px;
-    height: 70px;
-    position: relative;
-    bottom: 100px ;
-    right: 220px ;
-    border-radius: 100%;
-    border: 2px solid $Purple-1;
-  }
-}
-
-.body-card {
-  
-  h2 {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 5px;
-    font-weight: 700;
-  }
-
-  p {
-    text-align: center;
-    font-size: 12px;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-
-  .Text-colour-name {
-    color: $Purple-1;
-  }
-
-  .Text-colour-proffesion {
-    color: $Black;
-  }
-
-  .Text-colour-place {
-    color: $Black;
-  }
+.Text-colour-name {
+  color: $Purple-1;
 }

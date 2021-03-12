@@ -43,7 +43,7 @@ const Chart = () => {
   };
 
   return (
-    <section className="section__chart">
+    <section className="section__chart animate__animated animate__fadeInRight">
       <Bar data={data} options={options} />
     </section>
   );

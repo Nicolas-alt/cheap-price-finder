@@ -9,7 +9,9 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rosybrown;
   padding-top: 0.5em;
+  height: 100%;
   width: 100%;
 }
 
@@ -23,13 +25,11 @@ hr {
   flex-direction: column;
   align-items: center;
   color: rgb(122, 122, 122);
-  width: 100%;
 }
 
 .paragraph {
   text-align: center;
-  line-height: 18px;
-  font-size: 16px;
+  font-size: 1em;
   width: 90%;
 }
 
@@ -59,11 +59,14 @@ hr {
 .cards___container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2em;
   width: 100%;
 }
 
 @media screen and (max-width: 680px) {
+  .about___container {
+    height: auto;
+  }
+
   .cards___container {
     display: flex;
     align-items: center;
@@ -71,7 +74,6 @@ hr {
     justify-content: space-evenly;
     margin-top: 0;
     margin-bottom: 0.5em;
-    min-height: 50vh;
     width: 90%;
   }
 }
