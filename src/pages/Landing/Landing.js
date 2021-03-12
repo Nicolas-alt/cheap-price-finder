@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactComponent as Chart } from '../../assets/svg/chart.svg';
+import Input from '../../components/input/Input';
 import Nav from '../../components/navbar/Nav';
 import './Landing.scss';
 
@@ -13,12 +14,7 @@ const Landing = () => {
           <h2>
             We help you to find the best prices <span>ever</span>!
           </h2>
-          <form>
-            <input placeholder="Search..." type="search" />
-            <button>
-              <i className="fas fa-search"></i>
-            </button>
-          </form>
+          <Input />
         </div>
         <Chart className="sgv__principal" />
       </div>

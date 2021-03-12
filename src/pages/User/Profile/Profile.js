@@ -1,7 +1,12 @@
 import React from 'react';
+import './profile.scss';
 
 const Profile = () => {
-  return <div>Home</div>;
+  return (
+    <section className="animate__animated animate__fadeInRight">
+      Profile
+    </section>
+  );
 };
 
 export default Profile;

@@ -1,22 +1,22 @@
-@import "../../../assets/styles/var";
+@import '../../../assets/styles/var';
 
 .profile-card {
-  width: 35%;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
   background-size: cover;
+  box-shadow: 10px 8px 15px -4px rgba(0, 0, 0, 0.1);
+  width: 35%;
 }
 
 .card-header {
-  background: linear-gradient(130deg, $Purple-3, $Blue);
   padding: 5px 5px;
 }
 
 .card-image {
   display: inline-block;
   padding: 5px;
-  background: $White;
+  border: 0.2em solid #e8f1fd;
   margin: auto;
   margin-top: 5px;
   border-radius: 50%;
@@ -30,31 +30,41 @@
 }
 
 .name {
-  color: $White;
-  font-size: 18px;
+  color: rgb(122, 122, 122);
+  font-size: 1.2em;
   font-weight: 600;
   margin: 10px 0;
 }
 
 .profession {
-  font-size: 15px;
-  color: $White;
-  padding: 10px;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-style: italic;
+  color: rgb(122, 122, 122);
+  margin: 0;
 }
 
 .social-media {
   padding: 10px;
   border-radius: 10px;
+
   a {
-    color: $White;
+    color: #d1ddee;
     width: 90px;
     font-size: 20px;
-    transition: 0.3s linear;
     font-weight: 600;
+    margin: 0 1em;
 
     &:hover {
-      color: $Purple-1;
+      i {
+        color: #1da1f2;
+        transition: 0.5s color;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .profile-card {
+    width: 90%;
   }
 }
