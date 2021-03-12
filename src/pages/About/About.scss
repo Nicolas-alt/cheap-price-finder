@@ -1,6 +1,6 @@
-@import "../../assets/styles/var";
+@import '../../assets/styles/var';
 
-hr{
+hr {
   width: 50%;
 }
 
@@ -15,12 +15,7 @@ hr{
 
 .about___title {
   color: royalblue;
-  text-shadow: 0.1em 0.1em 0.2em $Black;
   margin: 0;
-
-  &:hover {
-    transform: scale(1.01);
-  }
 }
 
 .about___paragraph {
@@ -46,11 +41,6 @@ hr{
     font-size: 4em;
     margin: 0.2em;
     transition: 1.5s all;
-
-    &:hover {
-      transform: scale(0.8);
-      transition: 1.5s all;
-    }
   }
 
   .github:hover {
@@ -63,7 +53,8 @@ hr{
 }
 
 /******************** CARD CONTAINER *******************/
-.cards___container{
+
+.cards___container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
