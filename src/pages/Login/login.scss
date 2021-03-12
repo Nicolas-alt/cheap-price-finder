@@ -1,5 +1,5 @@
 $formBorder: 50px;
-$placeholderColor: rgb(41, 43, 44);;
+$placeholderColor: #d6d6d6;
 
 .section__signIn {
   display: flex;
@@ -104,49 +104,10 @@ $placeholderColor: rgb(41, 43, 44);;
     }
 
     form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       height: 100%;
       width: 50%;
-
-      label {
-        text-align: left;
-        font-weight: 700;
-        width: 90%;
-      }
-
-      a {
-        background-color: #0187db;
-        border: none;
-        color: white;
-        border-radius: 1.5em;
-        height: 3em;
-        width: 90%;
-      }
     }
   }
 }
-
-/*
-Colores:
-
-// blancos 
-#F8F9FB
-
-// negro
-#3C383E
-
-// azúl
-#0187DB
-
-//Morados
-#5C28CF
-#5738D1
-#4F50FF
-
-// Naranjas
-#FF7E5C
-#FF9558
-*/

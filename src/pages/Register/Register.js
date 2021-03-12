@@ -1,7 +1,6 @@
 import React from "react";
-import "./Register.scss";
-import "./Mobile.scss"
 import { Link } from 'react-router-dom';
+import "./Register.scss";
 
 const Register = () => {
   return (
