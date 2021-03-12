@@ -1,5 +1,6 @@
 import React from 'react';
 import { Bar } from '@reactchartjs/react-chart.js';
+import './chart.scss'
 
 const Chart = () => {
   const data = {
@@ -42,10 +43,9 @@ const Chart = () => {
   };
 
   return (
-    <div>
-      Chart
+    <section className="section__chart">
       <Bar data={data} options={options} />
-    </div>
+    </section>
   );
 };
 
