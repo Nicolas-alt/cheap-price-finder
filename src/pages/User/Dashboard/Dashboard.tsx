@@ -1,9 +1,12 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Navbar from '../../../components/dashboard/Navbar/Navbar';
 import './dashboard.scss';
 
-const Dashboard = ({ children }) => {
+type Children = {
+  children?: JSX.Element;
+};
+
+const Dashboard = ({ children }:Children) => {
   return (
     <section className="section__dashboard">
       <aside>

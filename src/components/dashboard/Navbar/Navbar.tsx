@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
 
@@ -23,7 +23,7 @@ const Navbar = () => {
           }
           onClick={()=>setMenu(!menu)}
         ></i>
-        <ul className={menu ? 'ul-active' : null}>
+        <ul className={menu ? 'ul-active' : undefined}>
           <li>
             <Link to="/">Profile</Link>
           </li>

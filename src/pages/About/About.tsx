@@ -1,7 +1,6 @@
-import React from 'react';
 import Card from './Card/Card';
 import './About.scss';
-// className="animate__animated animate__fadeInRight"
+
 const About = () => {
   return (
     <section className="about___container ">
@@ -17,8 +16,7 @@ const About = () => {
       </div>
       <h2 className="about___title">Colaborators</h2>
       <div className="cards___container">
-        <Card
-          image="https://avatars.githubusercontent.com/u/57303802?s=460&u=a79e7d6d3854104efa335b6f1b9fa95eff18a9bf&v=4"
+        <Card image="https://avatars.githubusercontent.com/u/57303802?s=460&u=a79e7d6d3854104efa335b6f1b9fa95eff18a9bf&v=4"
           name="Daniel Páez"
           skill="Frontend Developer"
           github="https://github.com/DanielPaezb"

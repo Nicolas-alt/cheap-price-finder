@@ -1,4 +1,3 @@
-import React from 'react';
 import { Bar } from '@reactchartjs/react-chart.js';
 import './chart.scss'
 
@@ -41,11 +40,9 @@ const Chart = () => {
       ],
     },
   };
-
+  //<Bar data={data} options={options} />
   return (
-    <section className="section__chart animate__animated animate__fadeInRight">
-      <Bar data={data} options={options} />
-    </section>
+    <section className="section__chart animate__animated animate__fadeInRight"></section>
   );
 };
 
