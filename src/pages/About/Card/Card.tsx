@@ -1,6 +1,15 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import './Card.scss';
+
+interface CardInterface {
+  image?:    string;
+  name:      string;
+  skill:     string;
+  facebook?: string;
+  twitter?:  string;
+  github?:   string;
+  web?:      string;
+}
 
 const Card = ({
   image,
@@ -10,7 +19,7 @@ const Card = ({
   twitter = undefined,
   github = undefined,
   web = undefined,
-}) => {
+}: CardInterface) => {
   return (
     <article className="profile-card">
       <div className="card-header">
