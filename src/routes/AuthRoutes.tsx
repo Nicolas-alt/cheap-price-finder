@@ -1,11 +1,5 @@
-import {
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
-
-import Login from '../pages/Login/Login'
-import Register from '../pages/Register/Register'
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { Login, Register } from '../pages';
 
 const AuthRoutes = () => {
   return (

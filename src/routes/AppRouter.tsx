@@ -6,9 +6,8 @@ import {
 } from 'react-router-dom';
 
 import AuthRoutes from './AuthRoutes';
-import Landing from '../pages/Landing/Landing';
-import PrivateRoutes from './PrivateRoutes'
-import About from '../pages/About/About';
+import PrivateRoutes from './PrivateRoutes';
+import { Landing, About } from '../pages';
 
 const AppRouter = () => {
   return (

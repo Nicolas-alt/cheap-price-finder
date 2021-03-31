@@ -1,10 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
-import User from '../pages/User/User';
-import Profile from '../pages/User/Profile/Profile';
-import Chart from '../pages/User/Chart/Chart';
-import Dashboard from '../pages/User/Dashboard/Dashboard';
-import About from '../pages/About/About';
-import Results from '../pages/Results/Results';
+import { User, Profile, Chart, Dashboard, About, Results } from '../pages';
 
 const PrivateRoutes = () => {
   return (

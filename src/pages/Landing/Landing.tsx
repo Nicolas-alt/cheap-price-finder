@@ -4,6 +4,7 @@ import Input from '../../components/input/Input';
 import Nav from '../../components/navbar/Nav';
 import './Landing.scss';
 
+
 const Landing = () => {
   return (
     <section className="section__container">
