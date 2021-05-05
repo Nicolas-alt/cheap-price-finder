@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Chart } from '../../assets/svg/chart.svg';
 import Input from '../../components/input/Input';
 import Nav from '../../components/navbar/Nav';
