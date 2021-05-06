@@ -1,6 +1,5 @@
-import React from 'react';
-import Card from '../../components/dashboard/card/Card';
-import Input from '../../components/input/Input';
+import Card from 'components/dashboard/card/Card';
+import Input from 'components/input/Input';
 import './results.scss';
 
 const Results = () => {

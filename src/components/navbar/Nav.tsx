@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.scss';
 
 const Nav = () => {
   const [menu, setmenu] = useState(false);

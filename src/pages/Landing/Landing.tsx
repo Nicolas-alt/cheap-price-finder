@@ -1,8 +1,7 @@
-import { ReactComponent as Chart } from '../../assets/svg/chart.svg';
-import Input from '../../components/input/Input';
-import Nav from '../../components/navbar/Nav';
+import { ReactComponent as Chart } from 'assets/svg/chart.svg';
+import Input from 'components/input/Input';
+import Nav from 'components/navbar/Nav';
 import './Landing.scss';
-
 
 const Landing = () => {
   return (

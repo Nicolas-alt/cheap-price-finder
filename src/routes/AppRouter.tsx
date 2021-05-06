@@ -7,7 +7,7 @@ import {
 
 import AuthRoutes from './AuthRoutes';
 import PrivateRoutes from './PrivateRoutes';
-import { Landing, About } from '../pages';
+import { Landing, About } from 'pages';
 
 const AppRouter = () => {
   return (

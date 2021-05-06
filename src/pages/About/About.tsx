@@ -1,9 +1,11 @@
 import Card from './Card/Card';
 import './About.scss';
+import { Nav } from 'components';
 
 const About = () => {
   return (
     <section className="about___container ">
+      <Nav />
       <h2 className="about___title">About Project</h2>
       <div className="about___paragraph">
         <p className="paragraph">
@@ -16,7 +18,8 @@ const About = () => {
       </div>
       <h2 className="about___title">Colaborators</h2>
       <div className="cards___container">
-        <Card image="https://avatars.githubusercontent.com/u/57303802?s=460&u=a79e7d6d3854104efa335b6f1b9fa95eff18a9bf&v=4"
+        <Card
+          image="https://avatars.githubusercontent.com/u/57303802?s=460&u=a79e7d6d3854104efa335b6f1b9fa95eff18a9bf&v=4"
           name="Daniel Páez"
           skill="Frontend Developer"
           github="https://github.com/DanielPaezb"

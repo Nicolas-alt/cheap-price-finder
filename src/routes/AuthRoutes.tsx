@@ -1,5 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { Login, Register } from '../pages';
+import { Login, Register } from 'pages';
 
 const AuthRoutes = () => {
   return (
