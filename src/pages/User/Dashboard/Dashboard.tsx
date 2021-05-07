@@ -1,4 +1,4 @@
-import { Navbar, Aside, Alert } from 'components';
+import { Navbar, Aside } from 'components';
 import { useState } from 'react';
 
 type Children = {
@@ -20,7 +20,6 @@ const Dashboard = ({ children }: Children) => {
           </div>
         </div>
       </div>
-      <Alert />
     </section>
   );
 };
