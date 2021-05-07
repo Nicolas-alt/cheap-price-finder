@@ -1,4 +1,4 @@
-import { Navbar, Aside } from 'components';
+import { Navbar, Aside, Alert } from 'components';
 import { useState } from 'react';
 
 type Children = {
@@ -14,18 +14,13 @@ const Dashboard = ({ children }: Children) => {
         <div className="flex flex-col w-full md:space-y-4">
           <Navbar setmenu={setmenu} menu={menu} />
           <div className="overflow-auto h-screen pb-24 px-4 md:px-6">
-            <h1 className="text-4xl font-semibold text-gray-800 dark:text-white">
-              Good afternoom, Charlie
-            </h1>
-            <h2 className="text-md text-gray-400">
-              We help you to find the best prices.
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4 bg-white rounded-lg">
               {children}
             </div>
           </div>
         </div>
       </div>
+      <Alert />
     </section>
   );
 };

@@ -4,17 +4,16 @@ import './results.scss';
 
 const Results = () => {
   return (
-    <section className="animate__animated animate__fadeInRight">
-      <Input />
-      <div>
-        <div>
-          <h2>More economical:</h2>
-        </div>
-        <div>
-          <h3>Other results</h3>
-          <Card />
-        </div>
-      </div>
+    <section className="col-span-full">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </section>
   );
 };
