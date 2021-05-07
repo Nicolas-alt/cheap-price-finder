@@ -1,13 +1,14 @@
-import './navbar.scss';
-
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 type Props = {
   menu: boolean;
   setmenu: (state: boolean) => void;
 };
 
 const Navbar = ({ setmenu, menu }: Props) => {
+  const [menuNav, setmenuNav] = useState(false);
   return (
-    <header className="w-full h-16 z-40 mx-1  flex items-center justify-between bg-white rounded-md">
+    <header className="w-full h-16 z-40 mx-1 relative flex items-center justify-between bg-white rounded-md">
       <div className="block lg:hidden ml-6">
         <button
           className="flex p-2 items-center rounded-full bg-white shadow text-gray-500 text-md"
@@ -40,14 +41,17 @@ const Navbar = ({ setmenu, menu }: Props) => {
             </svg>
           </button>
           <span className="w-1 h-8 rounded-lg bg-gray-200"></span>
-          <a href="#" className="block relative">
+          <Link to="/user/profile" className="block relative">
             <img
               alt="profil"
-              src="/images/person/1.jpg"
+              src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"
               className="mx-auto object-cover rounded-full h-10 w-10 "
             />
-          </a>
-          <button className="flex items-center text-gray-500 dark:text-white text-md">
+          </Link>
+          <button
+            className="flex items-center text-gray-500 dark:text-white text-md"
+            onClick={() => setmenuNav(!menuNav)}
+          >
             Charlie R
             <svg
               width="20"
@@ -60,6 +64,39 @@ const Navbar = ({ setmenu, menu }: Props) => {
               <path d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"></path>
             </svg>
           </button>
+        </div>
+      </div>
+      <div
+        className={
+          menuNav
+            ? 'origin-top-right absolute top-16 right-4 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5'
+            : 'hidden'
+        }
+      >
+        <div
+          className="py-1 "
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="options-menu"
+        >
+          <Link
+            to="/user/profile"
+            className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+            role="menuitem"
+          >
+            <span className="flex flex-col">
+              <span>Settings</span>
+            </span>
+          </Link>
+          <Link
+            to="/home"
+            className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+            role="menuitem"
+          >
+            <span className="flex flex-col">
+              <span>LogOut</span>
+            </span>
+          </Link>
         </div>
       </div>
     </header>

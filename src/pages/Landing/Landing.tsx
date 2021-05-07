@@ -1,5 +1,6 @@
 import chart from 'assets/svg/chart.svg';
 import Nav from 'components/navbar/Nav';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -19,16 +20,20 @@ const Landing = () => {
                 best prices <span className="text-indigo-500">ever</span>!
               </p>
               <div className="flex mt-8">
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   className="uppercase py-2 px-4 rounded-lg bg-indigo-400 border-2 border-transparent text-white text-md mr-4 hover:bg-indigo-300"
                 >
                   Get started
-                </a>
+                </Link>
               </div>
             </div>
             <div className="hidden sm:w-1/3 lg:w-3/5 relative sm:flex justify-center items-center">
-              <img src={chart} className="max-w-xs md:max-w-sm m-auto" />
+              <img
+                src={chart}
+                className="max-w-xs md:max-w-sm m-auto"
+                alt="Svg logo"
+              />
             </div>
           </div>
         </div>

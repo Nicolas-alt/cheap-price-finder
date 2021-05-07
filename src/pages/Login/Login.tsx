@@ -24,7 +24,6 @@ const Login = () => {
                 </span>
                 <input
                   type="text"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your email"
                 />
@@ -45,7 +44,6 @@ const Login = () => {
                 </span>
                 <input
                   type="password"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your password"
                 />
@@ -53,12 +51,12 @@ const Login = () => {
             </div>
             <div className="flex items-center mb-6 -mt-4">
               <div className="flex ml-auto">
-                <a
-                  href="#"
+                <Link
+                  to="/auth/register"
                   className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
                 >
                   Forgot Your Password?
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex w-full">
@@ -72,13 +70,12 @@ const Login = () => {
           </form>
         </div>
         <div className="flex items-center justify-center mt-6">
-          <a
-            href="#"
-            target="_blank"
+          <Link
+            to="/auth/register"
             className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white"
           >
             <span className="ml-2">You don&#x27;t have an account?</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

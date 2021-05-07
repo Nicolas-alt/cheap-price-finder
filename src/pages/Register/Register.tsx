@@ -24,7 +24,6 @@ const Register = () => {
                 </span>
                 <input
                   type="text"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your username"
                 />
@@ -43,7 +42,6 @@ const Register = () => {
                 </span>
                 <input
                   type="text"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your email"
                 />
@@ -64,7 +62,6 @@ const Register = () => {
                 </span>
                 <input
                   type="password"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your password"
                 />
@@ -85,20 +82,9 @@ const Register = () => {
                 </span>
                 <input
                   type="password"
-                  id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Repeat password"
                 />
-              </div>
-            </div>
-            <div className="flex items-center mb-6 -mt-4">
-              <div className="flex ml-auto">
-                <a
-                  href="#"
-                  className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
-                >
-                  Have an account?
-                </a>
               </div>
             </div>
             <div className="flex w-full">
@@ -112,13 +98,12 @@ const Register = () => {
           </form>
         </div>
         <div className="flex items-center justify-center mt-6">
-          <a
-            href="#"
-            target="_blank"
+          <Link
+            to="/auth/login"
             className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white"
           >
-            <span className="ml-2">You don&#x27;t have an account?</span>
-          </a>
+            <span className="ml-2">Have an account?</span>
+          </Link>
         </div>
       </div>
     </section>
