@@ -9,7 +9,7 @@ const Nav = () => {
       <nav className="flex bg-white flex-wrap items-center justify-between p-4 max-w-full">
         <div className="lg:order-2 w-auto lg:w-1/5 lg:text-center">
           <Link
-            className="text-xl text-gray-800 font-semibold font-heading"
+            className="text-xl text-indigo-400 font-semibold font-heading"
             to="/ "
           >
             Cheap Finder

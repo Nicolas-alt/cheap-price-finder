@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import './Card.scss';
 
 interface CardInterface {
-  image?:    string;
-  name:      string;
-  skill:     string;
+  image?: string;
+  name: string;
+  skill: string;
   facebook?: string;
-  twitter?:  string;
-  github?:   string;
-  web?:      string;
+  twitter?: string;
+  github?: string;
+  web?: string;
 }
 
 const Card = ({
@@ -21,7 +21,7 @@ const Card = ({
   web = undefined,
 }: CardInterface) => {
   return (
-    <article className="profile-card">
+    <article className="profile-card m-3">
       <div className="card-header">
         <picture className="card-image">
           <img src={image} alt="" />

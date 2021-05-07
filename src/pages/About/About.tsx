@@ -5,10 +5,12 @@ const About = () => {
   return (
     <>
       <Nav />
-      <section className="about___container ">
-        <h2 className="about___title">About Project</h2>
+      <section className="w-full flex justify-center items-center flex-col">
+        <h2 className="font-bold text-3xl text-indigo-400 mt-8">
+          About Project
+        </h2>
         <div className="about___paragraph">
-          <p className="paragraph">
+          <p className="p-4">
             This project is a product searcher, and it has a particular function
             of filtering so many prices in Internet and to show the user the
             most low.
@@ -16,8 +18,8 @@ const About = () => {
             This project was developed by two enthusiasts developers.
           </p>
         </div>
-        <h2 className="about___title">Colaborators</h2>
-        <div className="cards___container">
+        <h2 className="text-2xl text-indigo-400">Colaborators</h2>
+        <div className="w-full flex justify-center flex-wrap mt-9">
           <Card
             image="https://avatars.githubusercontent.com/u/57303802?s=460&u=a79e7d6d3854104efa335b6f1b9fa95eff18a9bf&v=4"
             name="Daniel Páez"
